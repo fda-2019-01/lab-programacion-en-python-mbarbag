@@ -30,5 +30,5 @@ columne.sort()
 elements = list(set(columne))
 elements.sort()
 for element in elements:
-  print(element,',',columne.count(element))
+  print('{},{}'.format(element,columne.count(element)))
   

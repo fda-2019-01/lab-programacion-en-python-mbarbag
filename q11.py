@@ -20,4 +20,4 @@ for row in columns:
   lens = len(second)
   third = row[2].split(',')
   lent = len(third)
-  print(row[0],',',lens,',',lent)
+  print('{},{},{}'.format(row[0],lens,lent))

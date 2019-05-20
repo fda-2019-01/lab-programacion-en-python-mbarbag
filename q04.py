@@ -22,4 +22,4 @@ months = [(row[1]) for row in thirdcolumn]
 elements = list(set(months))
 elements.sort()
 for element in elements:
-  print(element,',',months.count(element))
+  print('{},{}'.format(element,months.count(element)))

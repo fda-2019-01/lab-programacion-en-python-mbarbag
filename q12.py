@@ -31,4 +31,4 @@ for row in columns:
 result = list(dic.items())
 result.sort()
 for element, total in result:
-  print(element,',',total)
+  print('{},{}'.format(element,total))

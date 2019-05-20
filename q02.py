@@ -16,4 +16,4 @@ firstcolumn.sort()
 elements = list(set(firstcolumn))
 elements.sort()
 for element in elements:
-  print(element,',',firstcolumn.count(element))
+  print('{},{}'.format(element,firstcolumn.count(element)))

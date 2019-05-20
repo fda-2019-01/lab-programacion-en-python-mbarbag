@@ -25,4 +25,4 @@ for row in values:
   total.append(suma)
 lent = len(total)
 for i in range(lent):
-  print(elements[i],',',total[i])
+  print('{},{}'.format(elements[i],total[i]))

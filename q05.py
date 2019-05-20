@@ -26,4 +26,4 @@ for row in columns:
 result = list(dic.items())
 result.sort()
 for element, total in result:
-  print(element,',',total[0],',',total[1])
+  print('{},{},{}'.format(element,total[0],total[1]))
