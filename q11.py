@@ -11,3 +11,13 @@
 ## E,2,3
 ## E,3,3
 ##
+data = open("data.csv",'r').readlines()
+data = [row[0:-1] for row in data] #quito las \n
+data = [row.split('\t') for row in data] #parto el archivo por las \t
+columns = [[row[0],row[3],row[4]] for row in data]
+for row in columns:
+  second = row[1].split(',')
+  lens = len(second)
+  third = row[2].split(',')
+  lent = len(third)
+  print(row[0],',',lens,',',lent)

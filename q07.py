@@ -16,3 +16,18 @@
 ##    ('9', ['A', 'B', 'E', 'C'])
 ##
 ##
+data = open("data.csv",'r').readlines()
+data = [row[0:-1] for row in data] #quito las \n
+data = [row.split('\t') for row in data] #parto el archivo por las \t
+columns = [[row[0],row[1]] for row in data]
+elements = list(set([row[1] for row in columns]))
+dic = {}
+for element in elements:
+    dic[element] = []
+
+for row in columns:
+  dic[row[1]] += [row[0]]
+result = list(dic.items())
+result.sort()
+for element, total in result:
+  print((element,total))
